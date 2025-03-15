@@ -123,7 +123,6 @@ let checkinterval = function(text, tcnf) {
                     alert("It is confirmed!");
 
                     if(tcnf){
-                        alert("tcnf!");
                         tcnf.remove();
                     } 
                     
