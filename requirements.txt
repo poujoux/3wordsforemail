@@ -1,0 +1,4 @@
+boto3
+Flask
+Jinja2
+python-dotenv

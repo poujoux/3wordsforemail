@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <style>
+        div[id="imgs"]{
+            display: flex;
+            gap: 10px;
+        }
+
+        .credits {
+            position: absolute;
+            line-height: 1px;
+            bottom: 0;
+        }
+        .credits a{
+            font-size: 5px;
+        }
+            
+
+    </style>
+</head>
+<body>
+
+    <form id="femail" action="/" method="POST">
+        <input type="email" id="iefemail" name="emailf" placeholder="Enter your email" value="gimoba4002@dwriters.com" />
+        <br/>
+        <input type="text" id="itfemail" name="textf" placeholder="Enter your text" >
+        <button type="submit" id="bfemail">Click</button>
+    </form>
+
+        <span id="inft" class="smpletxt" style="opacity: 1; color: black;"><i>word1 word2 word3</i></span>
+        <br class="smpletxt"/>
+        <br/>
+        
+        <div id="imgs">
+            <img src="static/images/sun.png" width="50" height="50"/>
+            <img src="static/images/clouds.png" width="50" height="50"/>
+            <img src="static/images/rain.png" width="50" height="50"/>
+            <img src="static/images/snow.png" width="50" height="50"/>
+        </div>
+
+
+
+        <div class="credits">
+            <a href="https://www.flaticon.com/free-icons/summer" title="summer icons">Summer icons created by Freepik - Flaticon</a>
+            <br/>
+            <a href="https://www.flaticon.com/free-icons/cloud" title="cloud icons">Cloud icons created by Alfredo Hernandez - Flaticon</a>
+            <br/>
+            <a href="https://www.flaticon.com/free-icons/rain" title="rain icons">Rain icons created by iconixar - Flaticon</a>
+            <br/>
+            <a href="https://www.flaticon.com/free-icons/snowy" title="snowy icons">Snowy icons created by bqlqn - Flaticon</a><a href="https://www.flaticon.com/free-icons/hurricane" title="hurricane icons">Hurricane icons created by juicy_fish - Flaticon</a>
+            <br/>
+        </div>
+
+
+
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script> 
+</body>
+</html>
+
